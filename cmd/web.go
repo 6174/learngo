@@ -4,6 +4,7 @@ import (
 	"github.com/urfave/cli"
 	"github.com/kataras/iris"
 	"fmt"
+	"6174/cliapp/modules/routers/website"
 )
 
 var CmdWeb = cli.Command {
@@ -30,10 +31,7 @@ func runWeb (ctx *cli.Context) error {
 		fmt.Println(ctx.String("config"))
 	}
 
-	iris.Get("/", func(ctx *iris.Context) {
-		//ctx.Writef("Hi %s", "iris")
-		ctx.Render("index.html", struct { Name string }{ Name: "iris" })
-	})
+	iris.Get("/", website.Home)
 
 	iris.Listen(":" + ctx.String("port"))
 
