@@ -1,0 +1,19 @@
+{
+	"comment": "",
+	"ignore": "test",
+	"package": [
+		{
+			"checksumSHA1": "ssj8pi1KlTXnK/P40qHHrOn2FVM=",
+			"path": "github.com/urfave/cli",
+			"revision": "8f6a3675e11d69c50a82670c4a570e06d41094b7",
+			"revisionTime": "2017-01-08T22:29:12Z"
+		},
+		{
+			"checksumSHA1": "ssj8piasdfa1KlTXnK/P40qHHrOn2FVM=",
+			"path": "github.com/kataras/iris",
+			"revision": "8f6a3675e11d69c50a8asd2670c4a570e06d41094b7",
+			"revisionTime": "2017-01-08T23:29:12Z"
+		}
+	],
+	"rootPath": "6174/cliapp"
+}
