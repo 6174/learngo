@@ -3,16 +3,34 @@
 	"ignore": "test",
 	"package": [
 		{
-			"checksumSHA1": "ssj8pi1KlTXnK/P40qHHrOn2FVM=",
-			"path": "github.com/urfave/cli",
-			"revision": "8f6a3675e11d69c50a82670c4a570e06d41094b7",
-			"revisionTime": "2017-01-08T22:29:12Z"
+			"checksumSHA1": "nnU9JnAKp3cfHJHrEAH8bvRb1kI=",
+			"path": "github.com/jinzhu/gorm",
+			"revision": "373207d546d4bf4a971d688b63ed787528548d6e",
+			"revisionTime": "2017-01-05T14:27:20Z"
+		},
+		{
+			"checksumSHA1": "VIp1lZm6joWhlNdwhady8u//qRw=",
+			"path": "github.com/jinzhu/inflection",
+			"revision": "1c35d901db3da928c72a72d8458480cc9ade058f",
+			"revisionTime": "2017-01-02T12:52:26Z"
 		},
 		{
 			"checksumSHA1": "ssj8piasdfa1KlTXnK/P40qHHrOn2FVM=",
 			"path": "github.com/kataras/iris",
 			"revision": "8f6a3675e11d69c50a8asd2670c4a570e06d41094b7",
 			"revisionTime": "2017-01-08T23:29:12Z"
+		},
+		{
+			"checksumSHA1": "ssj8pi1KlTXnK/P40qHHrOn2FVM=",
+			"path": "github.com/urfave/cli",
+			"revision": "8f6a3675e11d69c50a82670c4a570e06d41094b7",
+			"revisionTime": "2017-01-08T22:29:12Z"
+		},
+		{
+			"checksumSHA1": "Nd6DRcLwZripAErJPfgW+Yf0Moc=",
+			"path": "gopkg.in/ini.v1",
+			"revision": "6f66b0e091edb3c7b380f7c4f0f884274d550b67",
+			"revisionTime": "2016-12-21T12:03:40Z"
 		}
 	],
 	"rootPath": "6174/cliapp"
