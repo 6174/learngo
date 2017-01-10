@@ -5,6 +5,7 @@ import (
 	"github.com/kataras/iris"
 	"fmt"
 	"6174/cliapp/modules/routers/website"
+	"6174/cliapp/modules/routers"
 )
 
 var CmdWeb = cli.Command {
@@ -30,7 +31,7 @@ func runWeb (ctx *cli.Context) error {
 	if ctx.IsSet("config") {
 		fmt.Println(ctx.String("config"))
 	}
-
+	routers.GlobalInit()
 	iris.Get("/", website.Home)
 
 	iris.Listen(":" + ctx.String("port"))
