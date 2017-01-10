@@ -33,7 +33,7 @@ func runWeb (ctx *cli.Context) error {
 	}
 	routers.GlobalInit()
 	iris.Get("/", website.Home)
-
+	iris.Get("install")
 	iris.Listen(":" + ctx.String("port"))
 
 	return nil

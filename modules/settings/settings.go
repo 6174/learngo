@@ -14,12 +14,20 @@ import (
 var (
 
 	// App settings
-	AppVersion     string
-	AppPath        string
-	AppName        string = "SPM"
-	AppDataPath    string = "." + AppName
-	AppURL         string
-	HomeDir        string
+	AppVersion      string
+	AppPath         string
+	AppName         string = "SPM"
+	AppDataPath     string = "." + AppName
+	AppTempDataPath string
+	AppURL          string
+	HomeDir         string
+
+	// Packages settings
+	LocalPackageRepoPath          string
+	OSSPackageRepoEndpoint        string
+ 	OSSPackageRepoAccessKeyId     string
+	OSSPackageRepoAccessKeySecret string
+	OSSPackageRepoBucketId        string
 
 	// Server settings
 	CertFile       string
@@ -73,11 +81,15 @@ func init() {
 	}
 
 	AppDataPath = path.Join(HomeDir, "." + AppName)
+	AppTempDataPath = path.Join(AppDataPath, "tmp")
 	LogRootPath = path.Join(AppDataPath, "log")
+	LocalPackageRepoPath = path.Join(AppDataPath, "packages")
 
 	if _, err = os.Stat(AppDataPath); os.IsNotExist(err) {
 		os.MkdirAll(AppDataPath, 0777)
+		os.MkdirAll(AppTempDataPath, 0777)
 		os.MkdirAll(LogRootPath, 0777)
+		os.MkdirAll(LocalPackageRepoPath, 0777)
 	}
 
 	AppPath = strings.Replace(AppPath, "\\", "/", -1)

@@ -4,6 +4,7 @@ import (
 	"os"
 	"runtime"
 	"errors"
+	"strings"
 )
 
 func IsFile(filePath string) bool{
@@ -38,4 +39,9 @@ func CurrentUsername() string {
 	}
 
 	return os.Getenv("USERNAME")
+}
+
+func PWD() string {
+	dir, _ := os.Getwd()
+	return strings.Replace(dir, " ", "\\ ", -1)
 }

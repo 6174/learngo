@@ -24,6 +24,7 @@ func main() {
 
 	app.Commands = []cli.Command {
 		cmd.CmdWeb,
+		cmd.PublishCommand,
 		cli.Command{
 			Name: "get",
 			Usage: "Install package from url",
