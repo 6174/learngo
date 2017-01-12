@@ -28,6 +28,7 @@ var (
  	OSSPackageRepoAccessKeyId     string
 	OSSPackageRepoAccessKeySecret string
 	OSSPackageRepoBucketId        string
+	RemoteRegistryUri             string = "http://repositry.spm.idcos.com"
 
 	// Server settings
 	CertFile       string

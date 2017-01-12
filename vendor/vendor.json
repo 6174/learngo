@@ -21,6 +21,12 @@
 			"revisionTime": "2017-01-08T23:29:12Z"
 		},
 		{
+			"checksumSHA1": "zmC8/3V4ls53DJlNTKDZwPSC/dA=",
+			"path": "github.com/satori/go.uuid",
+			"revision": "b061729afc07e77a8aa4fad0a2fd840958f1942a",
+			"revisionTime": "2016-09-27T10:08:44Z"
+		},
+		{
 			"checksumSHA1": "ssj8pi1KlTXnK/P40qHHrOn2FVM=",
 			"path": "github.com/urfave/cli",
 			"revision": "8f6a3675e11d69c50a82670c4a570e06d41094b7",
@@ -31,6 +37,12 @@
 			"path": "gopkg.in/ini.v1",
 			"revision": "6f66b0e091edb3c7b380f7c4f0f884274d550b67",
 			"revisionTime": "2016-12-21T12:03:40Z"
+		},
+		{
+			"checksumSHA1": "12GqsW8PiRPnezDDy0v4brZrndM=",
+			"path": "gopkg.in/yaml.v2",
+			"revision": "a5b47d31c556af34a302ce5d659e6fea44d90de0",
+			"revisionTime": "2016-09-28T15:37:09Z"
 		}
 	],
 	"rootPath": "6174/cliapp"
